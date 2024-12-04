@@ -10,8 +10,13 @@
     <a-scene embedded arjs>
       <!-- Marker -->
       <a-marker preset="hiro">
-        <!-- 3D Object -->
-        <a-box position="0 0.5 0" material="color: blue;"></a-box>
+         <a-plane 
+          material="src: url('assets/earth_rotate.gif'); transparent: true;" 
+          position="0 0.5 0" 
+          rotation="-90 0 0" 
+          height="1" 
+          width="1">
+        </a-plane>
       </a-marker>
 
       <!-- Camera -->
